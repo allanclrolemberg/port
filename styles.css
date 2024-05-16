@@ -1,0 +1,14 @@
+/* Adicione estilos conforme necessário */
+header {
+    text-align: center;
+}
+
+#projects {
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
