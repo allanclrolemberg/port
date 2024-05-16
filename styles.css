@@ -1,20 +1,8 @@
-/* Adicione estilos conforme necessário */
-header {
-    text-align: center;
-}
-
-#projects {
-    padding: 20px;
-}
-
-.project {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-
+/* Estilos para o corpo da página */
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc87, #c1dfd9);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
@@ -32,9 +20,30 @@ body {
     }
 }
 
+/* Estilos para centralizar o conteúdo */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
 /* Estilos para os botões de filtro */
 #filter-buttons {
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -51,4 +60,44 @@ body {
 
 .filter-btn:hover {
     background-color: #45a049;
+}
+
+/* Estilos para os projetos */
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
