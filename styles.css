@@ -52,49 +52,33 @@ header p {
 /* Estilos para a palavra "Projetos" */
 #projects-heading {
     font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Estilos para os botões de filtro */
-#filter-buttons {
     margin-bottom: 20px;
-}
-
-.filter-btn {
-    margin: 0 5px;
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.filter-btn:hover {
-    background-color: #45a049;
 }
 
 /* Estilos para os projetos */
 #projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .project {
-    width: calc(50% - 40px); /* 50% da largura menos o dobro da margem */
-    margin: 20px; /* Margem de 20px em todos os lados */
+    width: calc(50% - 20px); /* 50% da largura menos a margem */
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 20px;
     box-sizing: border-box; /* Para incluir padding e border na largura */
     position: relative; /* Para posicionar os ícones das plataformas */
 }
 
+.project .project-details {
+    margin-bottom: 20px;
+}
+
 .platforms {
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
 }
 
 .platforms img {
@@ -103,7 +87,7 @@ header p {
     margin-right: 5px;
 }
 
-.project h2 {
+.project h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -111,6 +95,10 @@ header p {
 .project p {
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+.media {
+    /* Adicione estilos para imagens e vídeos aqui */
 }
 
 .project-links {
@@ -129,3 +117,5 @@ header p {
 
 .project-links a:hover {
     background-color: #45a049;
+}
+
