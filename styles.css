@@ -42,6 +42,19 @@ header p {
     font-size: 16px;
 }
 
+/* Estilos para a linha divisória */
+.divider {
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a palavra "Projetos" */
+#projects-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 /* Estilos para os botões de filtro */
 #filter-buttons {
     margin-bottom: 20px;
