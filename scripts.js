@@ -16,6 +16,38 @@ const projects = [
         videos: ["video3.mp4", "video4.mp4"],
         externalLink: "URL_EXTERNO_2"
     },
+      {
+        title: "Projeto 2",
+        description: "Descrição do Projeto 2",
+        category: "Ação",
+        images: ["imagem3.jpg", "imagem4.jpg"],
+        videos: ["video3.mp4", "video4.mp4"],
+        externalLink: "URL_EXTERNO_2"
+    },
+      {
+        title: "Projeto 2",
+        description: "Descrição do Projeto 2",
+        category: "Ação",
+        images: ["imagem3.jpg", "imagem4.jpg"],
+        videos: ["video3.mp4", "video4.mp4"],
+        externalLink: "URL_EXTERNO_2"
+    },
+      {
+        title: "Projeto 2",
+        description: "Descrição do Projeto 2",
+        category: "Ação",
+        images: ["imagem3.jpg", "imagem4.jpg"],
+        videos: ["video3.mp4", "video4.mp4"],
+        externalLink: "URL_EXTERNO_2"
+    },
+      {
+        title: "Projeto 2",
+        description: "Descrição do Projeto 2",
+        category: "Ação",
+        images: ["imagem3.jpg", "imagem4.jpg"],
+        videos: ["video3.mp4", "video4.mp4"],
+        externalLink: "URL_EXTERNO_2"
+    },
     // Adicione mais projetos conforme necessário
 ];
 
