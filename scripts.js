@@ -1,4 +1,4 @@
- // Array de projetos de exemplo
+  // Array de projetos de exemplo
 const projects = [
     {
         title: "Projeto 1",
