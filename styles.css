@@ -1,5 +1,4 @@
 /* Estilos para o corpo da página */
-/* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,7 +19,6 @@ body {
         background-position: 0% 50%;
     }
 }
-
 
 /* Estilos para centralizar o conteúdo */
 .container {
@@ -65,10 +63,18 @@ header p {
 }
 
 /* Estilos para os projetos */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .project {
-    margin-bottom: 20px;
+    width: calc(50% - 20px); /* 50% da largura menos a margem */
+    margin: 10px;
     border: 1px solid #ccc;
     padding: 10px;
+    box-sizing: border-box; /* Para incluir padding e border na largura */
 }
 
 .project h2 {
