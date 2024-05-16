@@ -83,11 +83,24 @@ header p {
 }
 
 .project {
-    width: calc(60% - 40px); /* 50% da largura menos a margem */
-    margin: 20px;
+    width: calc(50% - 40px); /* 50% da largura menos o dobro da margem */
+    margin: 20px; /* Margem de 20px em todos os lados */
     border: 1px solid #ccc;
     padding: 20px;
     box-sizing: border-box; /* Para incluir padding e border na largura */
+    position: relative; /* Para posicionar os ícones das plataformas */
+}
+
+.platforms {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.platforms img {
+    width: 30px; /* Tamanho dos ícones das plataformas */
+    height: auto;
+    margin-right: 5px;
 }
 
 .project h2 {
@@ -97,28 +110,22 @@ header p {
 
 .project p {
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
-.project img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilos para o rodapé */
-footer {
+.project-links {
     margin-top: 20px;
 }
 
-footer p {
-    font-size: 16px;
-}
-
-footer a {
-    color: #333;
+.project-links a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
     text-decoration: none;
-    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
+.project-links a:hover {
+    background-color: #45a049;
