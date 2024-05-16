@@ -2,6 +2,7 @@
 const projects = [
     {
         title: "Projeto 1",
+        platforms: ["icon_platform1.png", "icon_platform2.png"],
         description: "Descrição do Projeto 1",
         category: "Multiplayer",
         images: ["imagem1.jpg", "imagem2.jpg"],
@@ -43,6 +44,17 @@ function addProjects() {
         projectsSection.innerHTML += projectHTML;
     });
 }
+
+ // Adiciona os ícones das plataformas
+            const platformsElement = document.createElement("div");
+            platformsElement.classList.add("platforms");
+            project.platforms.forEach(platform => {
+                const platformIcon = document.createElement("img");
+                platformIcon.src = platform;
+                platformIcon.alt = "Plataforma";
+                platformsElement.appendChild(platformIcon);
+            });
+            projectElement.appendChild(platformsElement);
 
 // Função para filtrar projetos por categoria
 function filterProjects(category) {
