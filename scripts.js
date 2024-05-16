@@ -47,7 +47,7 @@ const projects = [
         images: ["imagem3.jpg", "imagem4.jpg"],
         videos: ["video3.mp4", "video4.mp4"],
         externalLink: "URL_EXTERNO_2"
-    },
+    }
     // Adicione mais projetos conforme necessário
 ];
 
