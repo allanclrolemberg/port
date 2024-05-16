@@ -98,7 +98,7 @@ header p {
 }
 
 .media {
-    /* Adicione estilos para imagens e vídeos aqui */
+    /* Estilos para imagens e vídeos */
 }
 
 .project-links {
@@ -118,4 +118,3 @@ header p {
 .project-links a:hover {
     background-color: #45a049;
 }
-
