@@ -3,7 +3,7 @@ const projects = [
     {
         title: "Projeto 1",
         description: "Descrição do Projeto 1",
-        category: "Categoria 1",
+        category: "Multiplayer",
         images: ["imagem1.jpg", "imagem2.jpg"],
         videos: ["video1.mp4", "video2.mp4"],
         externalLink: "URL_EXTERNO_1"
@@ -11,7 +11,7 @@ const projects = [
     {
         title: "Projeto 2",
         description: "Descrição do Projeto 2",
-        category: "Categoria 2",
+        category: "Ação",
         images: ["imagem3.jpg", "imagem4.jpg"],
         videos: ["video3.mp4", "video4.mp4"],
         externalLink: "URL_EXTERNO_2"
@@ -25,7 +25,7 @@ function addProjects() {
 
     projects.forEach(project => {
         const projectHTML = `
-            <div class="project">
+            <div class="project ${project.category}">
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
                 <p>Categoria: ${project.category}</p>
@@ -44,5 +44,26 @@ function addProjects() {
     });
 }
 
-// Adicione os projetos à página quando a página carregar
-document.addEventListener('DOMContentLoaded', addProjects);
+// Função para filtrar projetos por categoria
+function filterProjects(category) {
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+        if (category === 'all' || project.classList.contains(category)) {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    });
+}
+
+// Adiciona event listeners aos botões de filtro
+document.addEventListener('DOMContentLoaded', () => {
+    addProjects();
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.dataset.category;
+            filterProjects(category);
+        });
+    });
+});
