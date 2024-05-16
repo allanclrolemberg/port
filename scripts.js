@@ -56,35 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             descriptionElement.textContent = project.description;
             projectElement.appendChild(descriptionElement);
 
-            // Adiciona as imagens
+            // Adiciona as imagens e vídeos
             const mediaElement = document.createElement("div");
             mediaElement.classList.add("media");
-            project.images.forEach(image => {
-                const imageElement = document.createElement("img");
-                imageElement.src = image;
-                mediaElement.appendChild(imageElement);
-            });
-            project.videos.forEach(video => {
-                const videoElement = document.createElement("video");
-                videoElement.src = video;
-                videoElement.controls = true;
-                mediaElement.appendChild(videoElement);
-            });
-            projectElement.appendChild(mediaElement);
-
-            // Adiciona o link externo
-            const linkElement = document.createElement("div");
-            const linkAnchor = document.createElement("a");
-            linkAnchor.href = project.externalLink;
-            linkAnchor.textContent = "Link Externo";
-            linkElement.appendChild(linkAnchor);
-            projectElement.appendChild(linkElement);
-
-            projectsContainer.appendChild(projectElement);
-        });
-    }
-
-    // Chama a função para adicionar os projetos à página
-    addProjectsToPage();
-});
-
+            project.images.forEach(image
