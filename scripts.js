@@ -17,12 +17,12 @@ const projects = [
         externalLink: "URL_EXTERNO_2"
     },
       {
-        title: "Projeto 2",
-        description: "Descrição do Projeto 2",
+        title: "Projeto 3",
+        description: "Descrição do Projeto 3",
         category: "Ação",
         images: ["imagem3.jpg", "imagem4.jpg"],
         videos: ["video3.mp4", "video4.mp4"],
-        externalLink: "URL_EXTERNO_2"
+        externalLink: "URL_EXTERNO_33"
     },
       {
         title: "Projeto 2",
