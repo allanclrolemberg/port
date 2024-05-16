@@ -1,23 +1,14 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #00bcd4, #2196f3, #3f51b5, #673ab7);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    background-color: #f0f0f0;
 }
 
 /* Estilos para centralizar o conteúdo */
@@ -25,11 +16,11 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
 /* Estilos para o cabeçalho */
 header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -45,7 +36,8 @@ header p {
 /* Estilos para a linha divisória */
 .divider {
     width: 100%;
-    border-top: 1px solid #fff;
+    height: 1px;
+    background-color: #ccc;
     margin: 20px 0;
 }
 
@@ -53,38 +45,16 @@ header p {
 #projects-heading {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Estilos para os projetos */
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .project {
-    width: calc(50% - 20px); /* 50% da largura menos a margem */
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    box-sizing: border-box; /* Para incluir padding e border na largura */
-    position: relative; /* Para posicionar os ícones das plataformas */
-}
-
-.project .project-details {
     margin-bottom: 20px;
-}
-
-.platforms {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.platforms img {
-    width: 30px; /* Tamanho dos ícones das plataformas */
-    height: auto;
-    margin-right: 5px;
 }
 
 .project h3 {
@@ -97,12 +67,36 @@ header p {
     margin-bottom: 10px;
 }
 
+.platforms {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.platforms img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
 .media {
-    /* Estilos para imagens e vídeos */
+    margin-top: 10px;
+}
+
+.media img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.media video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .project-links {
-    margin-top: 20px;
+    text-align: center;
 }
 
 .project-links a {
@@ -119,3 +113,8 @@ header p {
     background-color: #45a049;
 }
 
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
