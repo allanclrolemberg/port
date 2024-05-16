@@ -83,7 +83,7 @@ header p {
 }
 
 .project {
-    width: calc(50% - 40px); /* 50% da largura menos a margem */
+    width: calc(80% - 40px); /* 50% da largura menos a margem */
     margin: 20px;
     border: 1px solid #ccc;
     padding: 20px;
