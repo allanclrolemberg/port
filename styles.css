@@ -15,3 +15,24 @@ body {
         background-position: 0% 50%;
     }
 }
+
+/* Estilos para os botões de filtro */
+#filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #45a049;
+}
