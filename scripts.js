@@ -87,3 +87,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Chama a função para adicionar os projetos à página
     addProjectsToPage();
 });
+
