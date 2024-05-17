@@ -49,7 +49,6 @@ function addProjects() {
         `;
         });
         projectsSection.innerHTML += projectHTML;
-        projectsSection.appendChild(platformsElement);
     });
 }
 
