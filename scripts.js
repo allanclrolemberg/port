@@ -47,15 +47,6 @@ function addProjects() {
                 </div>
             </div>
         `;
-
-        // Adiciona os ícones das plataformas
-        const platformsElement = document.createElement("div");
-        platformsElement.classList.add("platforms");
-        project.platforms.forEach(platform => {
-            const platformIcon = document.createElement("img");
-            platformIcon.src = platform;
-            platformIcon.alt = "Plataforma";
-            platformsElement.appendChild(platformIcon);
         });
         projectsSection.innerHTML += projectHTML;
         projectsSection.appendChild(platformsElement);
