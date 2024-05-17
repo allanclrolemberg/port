@@ -47,7 +47,7 @@ function addProjects() {
                 </div>
             </div>
         `;
-        });
+       
         projectsSection.innerHTML += projectHTML;
     });
 }
