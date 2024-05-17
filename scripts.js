@@ -40,6 +40,11 @@ function addProjects() {
                     ${project.videos.map(video => `<video controls><source src="${video}" type="video/mp4">Your browser does not support the video tag.</video>`).join('')}
                 </div>
                 <p><a href="${project.externalLink}" target="_blank">Link Externo</a></p>
+
+                 <!-- Seção para ícones das plataformas -->
+                <div class="platforms">
+                    ${project.platforms.map(platform => `<img src="${platform}" alt="Plataforma">`).join('')}
+                </div>
             </div>
         `;
 
