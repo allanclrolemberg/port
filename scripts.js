@@ -11,6 +11,7 @@ const projects = [
     },
     {
         title: "Projeto 2",
+       platforms: ["icon_platform1.png", "icon_platform2.png"],
         description: "Descrição do Projeto 2",
         category: "Ação",
         images: ["imagem3.jpg", "imagem4.jpg"],
@@ -41,20 +42,23 @@ function addProjects() {
                 <p><a href="${project.externalLink}" target="_blank">Link Externo</a></p>
             </div>
         `;
+
+        // Adiciona os ícones das plataformas
+        const platformsElement = document.createElement("div");
+        platformsElement.classList.add("platforms");
+        project.platforms.forEach(platform => {
+            const platformIcon = document.createElement("img");
+            platformIcon.src = platform;
+            platformIcon.alt = "Plataforma";
+            platformsElement.appendChild(platformIcon);
+        });
         projectsSection.innerHTML += projectHTML;
+        projectsSection.appendChild(platformsElement);
     });
 }
 
  // Adiciona os ícones das plataformas
-            const platformsElement = document.createElement("div");
-            platformsElement.classList.add("platforms");
-            project.platforms.forEach(platform => {
-                const platformIcon = document.createElement("img");
-                platformIcon.src = platform;
-                platformIcon.alt = "Plataforma";
-                platformsElement.appendChild(platformIcon);
-            });
-            projectElement.appendChild(platformsElement);
+         
 
 // Função para filtrar projetos por categoria
 function filterProjects(category) {
