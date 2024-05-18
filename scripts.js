@@ -58,6 +58,7 @@
 
     // Função para abrir o modal com mais informações
     function openModal(event) {
+           console.log("Modal aberto!"); // Adicionando um console.log para verificar se a função é chamada
         const button = event.target;
         const title = button.dataset.title;
         const description = button.dataset.description;
@@ -65,6 +66,7 @@
         const videos = JSON.parse(button.dataset.videos);
         const externalLink = button.dataset.externalLink;
         const platforms = JSON.parse(button.dataset.platforms);
+    console.log(title, description, images, videos, externalLink, platforms); // Verificando os dados recebidos
 
         document.getElementById('modal-title').innerText = title;
         document.getElementById('modal-description').innerText = description;
