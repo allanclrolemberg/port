@@ -180,13 +180,6 @@ header p {
     width: 80%; /* Largura do conteúdo do modal */
     max-width: 1000px; /* Largura máxima do modal */
 }
-.modal-platforms {
-    display: flex;
-    gap: 10px; /* Espaço entre os ícones das plataformas */
-    justify-content: flex-start;
-    margin-top: 10px; /* Espaço acima dos ícones das plataformas */
-    margin-bottom: 10px; /* Adiciona uma margem na parte inferior dos ícones das plataformas */
-    }
 .modal-images img,
 .modal-videos video {
     display: block;
