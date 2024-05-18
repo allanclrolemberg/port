@@ -6,7 +6,7 @@ const projects = [
         description: "Descrição do Projeto 1",
         category: "Multiplayer",
         images: ["imagem1.jpg", "imagem2.jpg"],
-        videos: ["video1.mp4", "video2.mp4"],
+        videos: ["https://www.youtube.com/watch?v=EAHIOrhQZsI", "video2.mp4"],
         externalLink: "URL_EXTERNO_1"
     },
     {
