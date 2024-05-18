@@ -33,4 +33,4 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="platforms">
                         ${project.platforms.map(platform => `<img src="${platform}" alt="Plataforma">`).join('')}
                     </div>
-                    <img src="${project.images[
+                    <img src="${project.images[ 
