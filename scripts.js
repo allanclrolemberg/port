@@ -15,7 +15,7 @@
             description: "Descrição do Projeto 2",
             category: "Ação",
             images: ["imagem3.jpg", "imagem4.jpg"],
-            videos: ["video3.mp4", "video4.mp4"],
+            videos: ["https://www.youtube.com/watch?v=XgA4R2gagaM"],
             externalLink: "URL_EXTERNO_2"
         },
         // Adicione mais projetos conforme necessário
