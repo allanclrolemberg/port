@@ -6,12 +6,12 @@
             description: "Descubra o universo dos Kukoos neste incrível jogo de plataforma 3D. Explore mundos misteriosos e descubra mistérios para libertar os pets que sofreram lavagem cerebral. Conheça grandes personagens, novas mecânicas, lugares malucos e divirta-se a valer!",
             category: "Multiplayer",
             images: ["Games/kukoos.jpg", "Games/kukoos.jpg"],
-            videos: ["https://www.youtube.com/watch?v=LrvceEgWU7g", "video2.mp4"],
+            videos: ["https://www.youtube.com/watch?v=LrvceEgWU7g"],
             externalLink: "URL_EXTERNO_1"
         },
         {
-            title: "Projeto 2",
-            platforms: ["icon_platform1.png", "icon_platform2.png"],
+            title: "That's My Family: Family Fun Night",
+            platforms: ["Icons/PS.png", "Icons/windows.png", "Icons/nintendo.png", "Icons/microsoft"],
             description: "Descrição do Projeto 2",
             category: "Ação",
             images: ["imagem3.jpg", "imagem4.jpg"],
