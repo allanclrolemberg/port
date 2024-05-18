@@ -1,7 +1,7 @@
   // Array de projetos de exemplo
 const projects = [
     {
-        title: "Projeto 1",
+        title: "Kukoos: Lost Pets",
         platforms: ["icon_platform1.png", "icon_platform2.png"],
         description: "Descrição do Projeto 1",
         category: "Multiplayer",
