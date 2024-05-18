@@ -2,7 +2,7 @@
 const projects = [
     {
         title: "Kukoos: Lost Pets",
-        platforms: ["xbox.png", "icons/xbox.png"],
+        platforms: ["Icons/PS.png", "Icons/nintedo.png"],
         description: "Descrição do Projeto 1",
         category: "Multiplayer",
         images: ["imagem1.jpg", "imagem2.jpg"],
