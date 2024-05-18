@@ -6,7 +6,7 @@
             description: "Descubra o universo dos Kukoos neste incrível jogo de plataforma 3D. Explore mundos misteriosos e descubra mistérios para libertar os pets que sofreram lavagem cerebral. Conheça grandes personagens, novas mecânicas, lugares malucos e divirta-se a valer!",
             category: "Multiplayer",
             images: ["Games/kukoos.jpg", "imagem2.jpg"],
-            videos: ["https://www.youtube.com/watch?v=EAHIOrhQZsI", "video2.mp4"],
+            videos: ["https://www.youtube.com/watch?v=LrvceEgWU7g", "video2.mp4"],
             externalLink: "URL_EXTERNO_1"
         },
         {
@@ -76,7 +76,14 @@
         modalImages.innerHTML = images.map(image => `<img src="${image}" alt="Imagem do Projeto">`).join('');
 
         const modalVideos = document.getElementById('modal-videos');
-        modalVideos.innerHTML = videos.map(video => `<video controls><source src="${video}" type="video/mp4">Your browser does not support the video tag.</video>`).join('');
+    modalVideos.innerHTML = videos.map(video => {
+        if (video.includes('youtube.com')) {
+            const videoId = new URL(video).searchParams.get('v');
+            return `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        } else {
+            return `<video controls><source src="${video}" type="video/mp4">Your browser does not support the video tag.</video>`;
+        }
+    }).join('');
 
         const modalPlatforms = document.getElementById('modal-platforms');
         modalPlatforms.innerHTML = platforms.map(platform => `<img src="${platform}" alt="Plataforma">`).join('');
