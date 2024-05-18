@@ -3,7 +3,7 @@ const projects = [
     {
         title: "Kukoos: Lost Pets",
         platforms: ["Icons/PS.png", "icons/xbox.png"],
-        description: "Descrição do Projeto 1",
+        description: "Descubra o universo dos Kukoos neste incrível jogo de plataforma 3D. Explore mundos misteriosos e descubra mistérios para libertar os pets que sofreram lavagem cerebral. Conheça grandes personagens, novas mecânicas, lugares malucos e divirta-se a valer!",
         category: "Multiplayer",
         images: ["imagem1.jpg", "imagem2.jpg"],
         videos: ["https://www.youtube.com/watch?v=EAHIOrhQZsI", "video2.mp4"],
