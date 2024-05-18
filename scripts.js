@@ -33,4 +33,81 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="platforms">
                         ${project.platforms.map(platform => `<img src="${platform}" alt="Plataforma">`).join('')}
                     </div>
-                    <img src="${project.images[ 
+                    <img src="${project.images[0]}" alt="Imagem do Projeto" class="project-image">
+                    <div class="project-links">
+                        <button class="more-info-button" data-title="${project.title}" data-description="${project.description}" data-images='${JSON.stringify(project.images)}' data-videos='${JSON.stringify(project.videos)}' data-externalLink="${project.externalLink}" data-platforms='${JSON.stringify(project.platforms)}'>Mais sobre</button>
+                    </div>
+                </div>
+            `;
+            projectsSection.innerHTML += projectHTML;
+        });
+    }
+
+    // Função para filtrar projetos por categoria
+    function filterProjects(category) {
+        const projects = document.querySelectorAll('.project');
+        projects.forEach(project => {
+            if (category === 'all' || project.classList.contains(category)) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+
+    // Função para abrir o modal com mais informações
+    function openModal(event) {
+        const button = event.target;
+        const title = button.dataset.title;
+        const description = button.dataset.description;
+        const images = JSON.parse(button.dataset.images);
+        const videos = JSON.parse(button.dataset.videos);
+        const externalLink = button.dataset.externalLink;
+        const platforms = JSON.parse(button.dataset.platforms);
+
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-description').innerText = description;
+        document.getElementById('modal-external-link').href = externalLink;
+
+        const modalImages = document.getElementById('modal-images');
+        modalImages.innerHTML = images.map(image => `<img src="${image}" alt="Imagem do Projeto">`).join('');
+
+        const modalVideos = document.getElementById('modal-videos');
+        modalVideos.innerHTML = videos.map(video => `<video controls><source src="${video}" type="video/mp4">Your browser does not support the video tag.</video>`).join('');
+
+        const modalPlatforms = document.getElementById('modal-platforms');
+        modalPlatforms.innerHTML = platforms.map(platform => `<img src="${platform}" alt="Plataforma">`).join('');
+
+        document.getElementById('project-modal').style.display = 'block';
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        document.getElementById('project-modal').style.display = 'none';
+    }
+
+    // Adiciona event listeners aos botões de mais informações
+    function addMoreInfoEventListeners() {
+        const buttons = document.querySelectorAll('.more-info-button');
+        buttons.forEach(button => {
+            button.addEventListener('click', openModal);
+        });
+    }
+
+    // Adiciona event listeners aos botões de filtro
+    document.addEventListener('DOMContentLoaded', () => {
+        addProjects();
+        addMoreInfoEventListeners();
+
+        const filterButtons = document.querySelectorAll('.filter-button');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+                filterProjects(category);
+            });
+        });
+
+        const closeButton = document.querySelector('.close-button');
+        closeButton.addEventListener('click', closeModal);
+    });
+});
