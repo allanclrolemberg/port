@@ -111,5 +111,5 @@
         const closeButton = document.querySelector('.close-button');
         closeButton.addEventListener('click', closeModal);
     });
-});
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", addProjects);
