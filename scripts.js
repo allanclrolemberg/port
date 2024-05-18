@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
     // Array de projetos de exemplo
     const projects = [
         {
@@ -113,3 +112,4 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.addEventListener('click', closeModal);
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
