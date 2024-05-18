@@ -112,15 +112,15 @@ header p {
 }
 
 .platforms {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones das plataformas */
+    justify-content: flex-start;
+    margin-top: 10px; /* Espaço acima dos ícones das plataformas */
 }
 
 .platforms img {
     width: 30px; /* Tamanho dos ícones das plataformas */
     height: auto;
-    margin-right: 5px;
 }
 
 .project h3 {
@@ -153,6 +153,42 @@ header p {
 
 .project-links a:hover {
     background-color: #45a049;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Estilos para o rodapé */
