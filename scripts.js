@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const projects = [
         {
             title: "Kukoos: Lost Pets",
-            platforms: ["Icons/PS.png", "Icons/windows.png", "Icons/nintendo.png"],
+            platforms: ["Icons/PS.png", "Icons/windows.png"],
             description: "Descubra o universo dos Kukoos neste incrível jogo de plataforma 3D. Explore mundos misteriosos e descubra mistérios para libertar os pets que sofreram lavagem cerebral. Conheça grandes personagens, novas mecânicas, lugares malucos e divirta-se a valer!",
             category: "Multiplayer",
             images: ["imagem1.jpg", "imagem2.jpg"],
@@ -33,9 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="platforms">
                         ${project.platforms.map(platform => `<img src="${platform}" alt="Plataforma">`).join('')}
                     </div>
-                    <img src="${project.images[0]}" alt="Imagem do Projeto" class="project-image">
-                    <div class="project-links">
-                        <button class="more-info-button" data-title="${project.title}" data-description="${project.description}" data-images='${JSON.stringify(project.images)}' data-videos='${JSON.stringify(project.videos)}' data-externalLink="${project.externalLink}" data-platforms='${JSON.stringify(project.platforms)}'>Mais sobre</button>
+                    <div class="project-details">
+                        <img src="${project.images[0]}" alt="Imagem do Projeto" class="project-image">
+                        <div class="project-links">
+                            <button class="more-info-button" data-title="${project.title}" data-description="${project.description}" data-images='${JSON.stringify(project.images)}' data-videos='${JSON.stringify(project.videos)}' data-externalLink="${project.externalLink}" data-platforms='${JSON.stringify(project.platforms)}'>Mais sobre</button>
+                        </div>
                     </div>
                 </div>
             `;
