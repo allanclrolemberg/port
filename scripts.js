@@ -112,4 +112,3 @@
         closeButton.addEventListener('click', closeModal);
     });
 
-document.addEventListener("DOMContentLoaded", addProjects);
