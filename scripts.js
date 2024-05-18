@@ -11,7 +11,7 @@
         },
         {
             title: "That's My Family: Family Fun Night",
-            platforms: ["Icons/PS.png", "Icons/windows.png", "Icons/nintendo.png", "Icons/xbox"],
+            platforms: ["Icons/PS.png", "Icons/windows.png", "Icons/nintendo.png", "Icons/xbox.png"],
             description: "Descrição do Projeto 2",
             category: "Ação",
             images: ["Games/tmf1.jpg", "Games/tmf2.jpg", "Games/tmf3.jpg", "Games/tmf4.jpg", "Games/tmf5.jpg", "Games/tmf6.jpg", "Games/tmf7.jpg",],
