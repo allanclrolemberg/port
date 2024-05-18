@@ -5,7 +5,7 @@
             platforms: ["Icons/PS.png", "Icons/windows.png", "Icons/nintendo.png"],
             description: "Descubra o universo dos Kukoos neste incrível jogo de plataforma 3D. Explore mundos misteriosos e descubra mistérios para libertar os pets que sofreram lavagem cerebral. Conheça grandes personagens, novas mecânicas, lugares malucos e divirta-se a valer!",
             category: "Multiplayer",
-            images: ["Games/kukoos.jpg", "imagem2.jpg"],
+            images: ["Games/kukoos.jpg", "Games/kukoos.jpg"],
             videos: ["https://www.youtube.com/watch?v=LrvceEgWU7g", "video2.mp4"],
             externalLink: "URL_EXTERNO_1"
         },
