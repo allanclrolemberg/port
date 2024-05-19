@@ -135,7 +135,7 @@ header p {
 }
 
 .project-image {
-    width: 512px;
+    width: 256px;
     height: auto;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -178,9 +178,9 @@ header p {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Largura do conteúdo do modal */
-    max-width: 800px; /* Largura máxima do modal */
+    max-width: 600px; /* Largura máxima do modal */
 }
-.modal-platforms img,
+.modal-platforms,
 .modal-images img,
 .modal-videos video {
     display: block;
