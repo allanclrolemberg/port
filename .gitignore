@@ -1,7 +1,10 @@
 .DS_Store
 node_modules
-app/dist
-app/src/vendor
-/index.html
-/email.html
-/emailFR.html
+assets
+app/src
+bower.json
+package.json
+gulp
+gulpfile.js
+.bowerrc
+README.md
