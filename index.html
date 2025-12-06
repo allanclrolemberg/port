@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Allan Rolemberg - Game Dev Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fundo animado -->
+  <div class="bg-anim-layer"></div>
+  <div class="bg-particles">
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+  </div>
+
+  <div class="page">
+    <header class="hero">
+      <div class="hero-left">
+        <p class="hero-pill">🎮 Game Dev Portfolio</p>
+        <h1>Allan Rolemberg</h1>
+        <p class="hero-subtitle">Game Developer &amp; Software Engineer</p>
+        <p class="hero-text">
+          Unreal Engine • C++ • Ferramentas • IA • Acessibilidade em Games
+        </p>
+
+        <div class="hero-tags">
+          <span>Unreal Engine 5</span>
+          <span>Gameplay</span>
+          <span>Ferramentas</span>
+          <span>Porting</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-orb">
+          <div class="hero-orb-inner">
+            <span class="hero-orb-label">XP</span>
+            <strong>8+ anos</strong>
+            <span class="hero-orb-sub">em desenvolvimento de jogos</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <!-- Coluna da esquerda: filtros + projetos -->
+      <section class="projects-panel">
+        <header class="projects-header">
+          <h2>Projetos</h2>
+          <p>Filtre por plataforma e clique no projeto para ver o vídeo.</p>
+        </header>
+
+        <div class="console-tabs" role="tablist">
+          <button class="tab active" data-console-tab="all">Todos</button>
+          <button class="tab" data-console-tab="playstation">PlayStation</button>
+          <button class="tab" data-console-tab="switch">Nintendo Switch</button>
+          <button class="tab" data-console-tab="pc">PC</button>
+          <button class="tab" data-console-tab="mobile">Mobile</button>
+        </div>
+
+        <div class="projects-list">
+          <!-- Exemplo: substitua VIDEO_ID_... pelo ID do vídeo no YouTube -->
+
+          <article class="project-card is-active"
+                   data-console="playstation switch pc"
+                   data-video="VIDEO_ID_KUKOOS">
+            <div class="project-thumbnail">
+              <span class="icon-play">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>Kukoos: Lost Pets</h3>
+              <p class="project-meta">3D Platformer • Coop • Puzzle</p>
+              <p class="project-desc">
+                Plataforma 3D com foco em coop e puzzles. Lançado em múltiplas
+                plataformas, foi um marco na minha carreira com reconhecimento internacional.
+              </p>
+              <p class="project-tags">
+                Unreal Engine • C++ • Ferramentas internas
+              </p>
+            </div>
+            <span class="project-console-tag">Console</span>
+          </article>
+
+          <article class="project-card"
+                   data-console="switch ps mobile"
+                   data-video="VIDEO_ID_TMF">
+            <div class="project-thumbnail project-thumbnail--yellow">
+              <span class="icon-play">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>That’s My Family</h3>
+              <p class="project-meta">Party Game • Multi-plataforma</p>
+              <p class="project-desc">
+                Jogo de festa com minigames para até 4 jogadores. Atuei forte
+                em porting e otimização para diferentes consoles.
+              </p>
+              <p class="project-tags">
+                Unreal Engine • Otimização • Porting
+              </p>
+            </div>
+            <span class="project-console-tag">Multi</span>
+          </article>
+
+          <article class="project-card"
+                   data-console="pc mobile"
+                   data-video="VIDEO_ID_RUFF">
+            <div class="project-thumbnail project-thumbnail--orange">
+              <span class="icon-play">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>Ruff Ghanor</h3>
+              <p class="project-meta">Deckbuilder • Narrativo</p>
+              <p class="project-desc">
+                Jogo baseado nos livros de Ruff Ghanor, Jovem Nerd e Magalu.
+                Atuei no time de engenharia da DX Gameworks.
+              </p>
+              <p class="project-tags">
+                Unreal Engine • Gameplay Systems
+              </p>
+            </div>
+            <span class="project-console-tag">PC</span>
+          </article>
+
+          <!-- Você pode continuar adicionando cards aqui -->
+        </div>
+      </section>
+
+      <!-- Coluna da direita: player de vídeo -->
+      <aside class="video-panel">
+        <header class="video-header">
+          <h2 id="video-title">Kukoos: Lost Pets</h2>
+          <p>Trailer / gameplay selecionado</p>
+        </header>
+        <div class="video-frame">
+          <!-- Coloque um vídeo padrão aqui -->
+          <iframe
+            id="project-video"
+            src="https://www.youtube.com/embed/VIDEO_ID_KUKOOS?rel=0"
+            title="Vídeo do projeto"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <footer class="video-footer">
+          <p>Made in Dreams Creations • Portfólio de projetos</p>
+        </footer>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Allan Rolemberg • Made in Dreams Creations</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
