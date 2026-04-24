@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allan Rolemberg | Game Engineer Portfolio</title>
+  <meta name="description" content="Portfólio de Allan Rolemberg, Game Engineer especializado em Unreal Engine, C++, IA, porting, ferramentas e acessibilidade para games." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">Allan Rolemberg</a>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#work">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="kicker">Game Engineer • Unreal Engine • C++</p>
+        <h1>Jogos, ferramentas e experiências interativas com alma criativa e base técnica forte.</h1>
+        <p class="lead">
+          Sou Allan Rolemberg, Game Engineer e Software Engineer com 8 anos de experiência em jogos,
+          desenvolvimento multiplataforma, IA, ferramentas e acessibilidade.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">Explorar projetos</a>
+          <a class="btn ghost" href="mailto:allankuchiki@gmail.com">Falar comigo</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="orb"></div>
+        <p>Especialidade</p>
+        <h2>Unreal Engine</h2>
+        <span>Blueprints • C++ • Gameplay Systems • Tools</span>
+      </aside>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="kicker">Sobre</p>
+        <h2>Engenharia para transformar ideias em jogos jogáveis, polidos e escaláveis.</h2>
+      </div>
+      <div class="glass text-block">
+        <p>
+          Atuei em projetos como <strong>Kukoos: Lost Pets</strong>, <strong>That's My Family</strong>
+          e <strong>Ruff Ghanor</strong>, contribuindo com engenharia, porting, ferramentas,
+          sistemas de gameplay e suporte técnico para produção comercial.
+        </p>
+        <p>
+          Também desenvolvo projetos autorais e soluções criativas pela <strong>Made in Dreams Creations</strong>,
+          além de trabalhos em 3D com a <strong>Gizmo 3DLab</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-heading">
+        <p class="kicker">Projetos</p>
+        <h2>Projetos em destaque</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project featured">
+          <div class="project-top">
+            <span>01</span>
+            <small>Game Engineering</small>
+          </div>
+          <h3>Kukoos: Lost Pets</h3>
+          <p>Plataforma 3D com reconhecimento internacional. Um dos projetos mais importantes da minha trajetória.</p>
+          <div class="chips"><span>Unreal</span><span>C++</span><span>Gameplay</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <span>02</span>
+            <small>Porting</small>
+          </div>
+          <h3>That's My Family</h3>
+          <p>Projeto desafiador com foco em adaptação, otimização e publicação em múltiplas plataformas.</p>
+          <div class="chips"><span>Console</span><span>Optimization</span><span>QA</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <span>03</span>
+            <small>RPG / Deckbuilder</small>
+          </div>
+          <h3>Ruff Ghanor</h3>
+          <p>Projeto baseado no universo de Ruff Ghanor, desenvolvido com o time de engenharia da DX Gameworks.</p>
+          <div class="chips"><span>Systems</span><span>Pipeline</span><span>Unreal</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <span>04</span>
+            <small>Autoral</small>
+          </div>
+          <h3>Rewrite</h3>
+          <p>Visual novel psicológica e onírica com elementos roguelite e foco em acessibilidade visual.</p>
+          <div class="chips"><span>TTS</span><span>Narrative</span><span>Accessibility</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section split">
+      <div>
+        <p class="kicker">Skills</p>
+        <h2>Stack e áreas de atuação</h2>
+      </div>
+      <div class="skill-list">
+        <span>Unreal Engine 5</span>
+        <span>Blueprints</span>
+        <span>C++</span>
+        <span>Gameplay Ability System</span>
+        <span>IA para jogos</span>
+        <span>Ferramentas internas</span>
+        <span>Porting</span>
+        <span>VR / AR</span>
+        <span>Acessibilidade</span>
+        <span>Firebase</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact glass">
+      <div>
+        <p class="kicker">Contato</p>
+        <h2>Vamos construir algo memorável?</h2>
+        <p>Projetos de games, advergames, porting, Unreal Engine, VR/AR, ferramentas e soluções criativas em 3D.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:allankuchiki@gmail.com">allankuchiki@gmail.com</a>
+        <a href="https://github.com/allanclrolemberg" target="_blank" rel="noreferrer">github.com/allanclrolemberg</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn — adicionar link real</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Allan Rolemberg • Made in Dreams Creations</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
